@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    background-color: #ddd;
+}
+.parent > img{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.parent .two{
+    
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 184, 159, 0.719);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.parent .one{
+    width: 80%;
+    height: 20%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 80%;
+}
+span{
+    font-weight: bold;
+}
+.red{
+    color: #f00;
+}
+.parent:hover .two{
+    opacity:0.5;
+}
+.parent:hover .one{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80%;
+}
